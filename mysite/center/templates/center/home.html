@@ -1,0 +1,24 @@
+{% extends "center/base.html" %}
+{% block content %}
+    {% for Medical_Institute in Medical_Institutes %}
+<!--        'Institute': 'Maccabi',-->
+<!--        'city': 'beer sheva',-->
+<!--        'phone': '088888888',-->
+<!--        'date_posted': 'August 21, 2011'-->
+
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ Medical_Institute.Institute }}</a>
+              <small class="text-muted">{{ Medical_Institute.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ Medical_Institute.city }}</a></h2>
+            <p class="article-content">{{ Medical_Institute.phone }}</p>
+          </div>
+        </article>
+<!--        <h1>{{ Medical_Institute.Institute }}</h1>-->
+<!--        <p>By {{ Medical_Institute.city }} </p>-->
+<!--        <p>Post on {{ Medical_Institute.date_posted }} </p>-->
+<!--        <P>{{ Medical_Institute.phone }}</P>-->
+    {% endfor %}
+{% endblock content %}
