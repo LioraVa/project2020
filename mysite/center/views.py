@@ -5,20 +5,23 @@ Medical_Institutes = [
     {
         'Institute':'Maccabi',
         'city': 'beer sheva',
-        'phone': '088888888',
-        'date_posted': 'August 26, 2017'
+        'address': 'add 1',
+        'date_posted': 'August 26, 2017',
+         'phone': '0000'
     },
     {
         'Institute': 'Maccabi',
         'city': 'beer sheva',
-        'phone': '088888888',
-        'date_posted': 'August 2, 2015'
+        'address': 'add 2',
+        'date_posted': 'August 2, 2015',
+         'phone': '0000'
     },
     {
         'Institute': 'Maccabi',
         'city': 'beer sheva',
-        'phone': '088888888',
-        'date_posted': 'August 21, 2011'
+        'address': 'add 3',
+        'date_posted': 'August 21, 2011',
+         'phone': '0000'
     }
 ]
 def home(request):
